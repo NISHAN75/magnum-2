@@ -1,65 +1,77 @@
 (function ($) {
-   $(document).ready(function () {
+	"use strict";
+	$(document).ready(function () {
+		// lenis
+		const lenis = new Lenis({
+			duration: 1.5,
+			normalizeWheel: true,
+		});
+
+		function raf(time) {
+			lenis.raf(time);
+			requestAnimationFrame(raf);
+		}
+		requestAnimationFrame(raf);
+
+		// offcanvas menu 
+		$(".mobile-nav > ul > li > a").click(function (e) {
+			e.preventDefault();
+			let subMenu = $(this).next(".sub-menu");
+			$(".mobile-nav .sub-menu").not(subMenu).slideUp();
+			$(".mobile-nav > ul > li > a").not(this).removeClass('rotate active');
+			$(this).toggleClass('rotate active');
+			subMenu.stop(true, true).slideToggle();
+		});
 
 
-    // main menu
-    $(".main-menu li , .top-btn-wrapper").hover(function(){
-        $(this).find("ul").stop(true, true).slideDown();
-        $(this).find('.down-arrow-icon').addClass('rotate');
-      }, function(){
-        $(this).find("ul").stop(true, true).slideUp();
-        $(this).find('.down-arrow-icon').removeClass('rotate');
-      });
+		//   magnific Popup
+		$(".trigger-popup").magnificPopup({
+			type: "iframe",
+			iframe: {
+				markup: '<div class="mfp-iframe-scaler">' + '<div class="mfp-close"></div>' + '<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' + "</div>",
+				patterns: {
+					youtube: {
+						index: "youtube.com/",
+						id: "v=",
+						src: "https://www.youtube.com/embed/%id%?autoplay=1",
+					},
+				},
+			},
+		});
 
-      // offcanvas menu 
-      $(".mobile-nav > ul > li > a").click(function(e){
-        e.preventDefault();
-        let subMenu = $(this).next(".sub-menu");
-        $(".mobile-nav .sub-menu").not(subMenu).slideUp();
-        $(".mobile-nav > ul > li > a").not(this).removeClass('rotate active');
-        $(this).toggleClass('rotate active');
-        subMenu.stop(true, true).slideToggle();
-    });
+		// swiper
+		let projectSlider = new Swiper(".featured-project", {
+			slidesPerView: 1,
+			centeredSlides: true,
+			autoplay: {
+				delay: 5000,
+			},
+			spaceBetween: 50,
+			pagination: {
+				el: ".swiper-pagination",
+				type: "progressbar",
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
 
+		gsap.registerPlugin(ScrollTrigger);
 
+		var tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.about-us',
+				start: 'top 100%',
+				end: 'bottom 40%',
+				scrub: true,
+			}
+		});
 
-    //   magnific Popup
-      $(".trigger-popup").magnificPopup({
-        type: "iframe",
-        iframe: {
-            markup: '<div class="mfp-iframe-scaler">' + '<div class="mfp-close"></div>' + '<iframe class="mfp-iframe" frameborder="0" allow="autoplay"></iframe>' + "</div>",
-            patterns: {
-                youtube: {
-                    index: "youtube.com/",
-                    id: "v=",
-                    src: "https://www.youtube.com/embed/%id%?autoplay=1",
-                },
-            },
-        },
-      });
-
-      // swiper
-      let projectSlider = new Swiper(".featured-project", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        grabCursor:true,
-        // autoplay: {
-        //   delay: 5000,
-        // },
-        initialSlide: 1, 
-        pagination: {
-          el: ".swiper-pagination",
-          type: "progressbar",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-      });
-      
-
-       
-   });
+		// Set initial opacity to 0
+		tl.from('.about-img', {
+			opacity: 0,
+			y: 250,
+		});
+	});
 })(jQuery);
-
