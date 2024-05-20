@@ -4,7 +4,15 @@
 1.default css
 -----------------------------------
 */
-/* min-width 1430 */
+/* min-width 1550 */
+
+@media (min-width: 1550px) {
+	.join-right-img {
+		object-position: 0 -35px;
+	}
+}
+
+/* max-width 1430*/
 @media (max-width: 1430px) {
 	.about-us .row {
 		--bs-gutter-x: 24px;
@@ -112,6 +120,12 @@
 	}
 	/* services banner section end */
 
+	/* join us sectoin start */
+	.join-our-team-info .bottom-btn-wrapper {
+		gap: 25px;
+	}
+	/* join us sectoin end */
+
 	/* services page css */
 }
 
@@ -152,7 +166,11 @@
 
 
 	/* all padding fix start*/
-	.construction-area , .construction-services-area{
+	.construction-area ,  .construction-services-area
+	.featured-project-card-area,
+	.services-contact-from ,
+	.project-area ,
+	.drone-services-area.bg-snow-drift{
 		padding: 70px 0;
 	}
 	/* all padding fix end*/
@@ -290,13 +308,82 @@
 	}
 
 	/* services page css  */
-	/* construction servicessection start */
-	.construction-services-area .row {
-		--bs-gutter-x: 35px;
-		--bs-gutter-y: 50px;
-	}
-	/* construction servicessection end */
+		/* construction servicessection start */
+		.construction-services-area .row {
+			--bs-gutter-x: 35px;
+			--bs-gutter-y: 50px;
+		}
+		.mg-content-wrapper .row {
+			--bs-gutter-y: 30px;
+		}
+		.content-block-wrapper .row {
+			--bs-gutter-y: 30px;
+		}
+		/* construction servicessection end */
 	/* services page css  */
+
+	/* join us section start */
+	.join-right-img {
+		position: static;
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+	}
+	.join-our-team {
+		margin: 50px 0;
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+	/* join us section end */
+
+	/* services contact from section start */
+	.services-contact-title {
+		text-align: center;
+		font-size: 72px;
+	}
+	.services-contact-form-info {
+		margin-bottom: 30px;
+	}
+	.services-contact-from {
+		margin-bottom: 50px;
+	}
+	.contact-form-wrapper {
+		max-width: 100%;
+	}
+	/* services contact from section end */
+
+	/* project section start */
+	.featured-project-card-info.large .featured-project-card-img img {
+		clip-path: polygon(
+	  0 0,
+	  calc(100% - 80px) 0%,
+	  100% 80px,
+	  100% 100%,
+	  100% 100%,
+	  0 100%,
+	  0% 100%,
+	  0 0
+	 );
+	}
+	.filter-btn-info {
+		padding-bottom: 40px;
+		gap: 12px;
+	}
+	.featured-project-card-info .featured-project-card-img  .magnum-btn ,
+	.featured-project-card-info.large .featured-project-card-img  .magnum-btn {
+		padding: 50px;
+		clip-path: polygon(0 0, calc(100% - 50px) 0%, 100% 50px, 100% 100%, 100% 100%, 50px 100%, 0% calc(100% - 50px), 0 0);
+	}
+	.featured-project-card-info .featured-project-card-img  .magnum-btn svg
+	.featured-project-card-info.large .featured-project-card-img  .magnum-btn svg {
+		height: 70px;
+		width: 70px;
+	}
+	/* project section end */
+
+
+
+	
 
 
 	/* 991 end */
@@ -324,7 +411,11 @@
 	/* header section start */
 
 	/* all padding fix start*/
-	.construction-area , .construction-services-area{
+	.construction-area , .construction-services-area 
+	.featured-project-card-area,
+	.services-contact-from ,
+	.project-area ,
+	.drone-services-area.bg-snow-drift{
 		padding: 50px 0;
 	}
 	/* all padding fix end*/
@@ -389,6 +480,8 @@
 
 	/* footer section end */
 
+
+
 	/* 767 end */
 }
 
@@ -407,9 +500,6 @@
 		font-size: 24px;
 	}
 
-	h4 {
-		font-size: 20px;
-	}
 	.banner-section.small-banner .main-title{
 		font-size: 56px;
 	}
@@ -537,18 +627,17 @@
 @media (max-width: 479.98px) {
 	/* heading  style*/
 	h1 {
-		font-size: 40px;
+		font-size: 48px;
 	}
 
 	h2 {
-		font-size: 32px;
-	}
-
-	h3 {
-		font-size: 24px;
-	}
-	.banner-section.small-banner .main-title{
 		font-size: 40px;
+	}
+	.banner-section.small-banner .main-title {
+		font-size: 48px;
+	}
+	.services-contact-title {
+		font-size: 48px;
 	}
 
 
@@ -596,6 +685,50 @@
 	}
 
 	/* offcanvas menu end */
+
+	/* services page section start */
+		/* featured prject card section start */
+		.featured-project-card-info img {
+			clip-path: polygon(
+		0 0,
+		calc(100% - 30px) 0%,
+		100% 30px,
+		100% 100%,
+		100% 100%,
+		0 100%,
+		0% 100%,
+		0 0
+		);
+		}
+		/* featured prject card section end */
+
+	/* services page section end */
+
+	/* Drone Services section start  */
+	.deliver-title {
+		font-size: 40px;
+	}
+	/* Drone Services section end */
+	/* project section start */
+	.featured-project-card-info .featured-project-card-img img ,
+	.featured-project-card-info.large .featured-project-card-img img {
+		clip-path: polygon(
+	  0 0,
+	  calc(100% - 60px) 0%,
+	  100% 60px,
+	  100% 100%,
+	  100% 100%,
+	  0 100%,
+	  0% 100%,
+	  0 0
+	 );
+	}
+	.featured-project-card-info .featured-project-card-img  .magnum-btn svg ,
+	.featured-project-card-info.large .featured-project-card-img  .magnum-btn svg {
+		height: 35px;
+		width: 35px;
+	}
+	/* project section end */
 }
 
 /* max-width 383 */
@@ -619,6 +752,31 @@
 	}
 
 	/* featured project slider sectons end */
+
+	/* project section start */
+	.featured-project-card-info .featured-project-card-img img ,
+	.featured-project-card-info.large .featured-project-card-img img {
+		clip-path: polygon(
+		0 0,
+		calc(100% - 60px) 0%,
+		100% 60px,
+		100% 100%,
+		100% 100%,
+		0 100%,
+		0% 100%,
+		0 0
+		);
+	}
+	.featured-project-card-info .featured-project-card-img  .magnum-btn svg ,
+	.featured-project-card-info.large .featured-project-card-img  .magnum-btn svg {
+		height: 25px;
+		width: 25px;
+	}
+	.featured-project-card-info .featured-project-card-img  .magnum-btn ,
+	.featured-project-card-info.large .featured-project-card-img  .magnum-btn {
+		padding: 40px;
+	}
+	/* project section end */
 }
 
 /* max-width 383 */

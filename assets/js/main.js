@@ -23,6 +23,9 @@
 			subMenu.stop(true, true).slideToggle();
 		});
 
+		// nice select 
+		$('select').niceSelect();
+
 
 		//   magnific Popup
 		$(".trigger-popup").magnificPopup({
