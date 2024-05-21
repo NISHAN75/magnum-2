@@ -1876,3 +1876,42 @@ input:focus , textarea:focus{
 
 
 /* single project section end */
+
+
+/* about page css */
+
+/* about video section start */
+.experience-area.about-video-area {
+    margin: 70px 0 112px;
+}
+.our-reach-info h3 {
+    font-size: 76.851px;
+    font-weight: 300;
+    line-height: 0.98;
+    margin-bottom: 58px;
+}
+.our-reach-inner-info .counter {
+    color: #0078C9;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -1.6px;
+}
+.our-reach-inner-info h6 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.our-reach-info {
+    margin-bottom: 45px;
+}
+.our-reach-info:last-child{
+	margin-bottom: 0;
+}
+.our-reach-area {
+    padding-bottom: 112px;
+}
+/* about video section end */
+
+/* about page css */
