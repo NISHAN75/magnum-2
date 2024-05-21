@@ -26,6 +26,9 @@
 		// nice select 
 		$('select').niceSelect();
 
+		// counter up
+		// $('.counter').counterUp();
+
 
 		//   magnific Popup
 		$(".trigger-popup").magnificPopup({
@@ -59,6 +62,18 @@
 				prevEl: ".swiper-button-prev",
 			},
 		});
+		let singleProject = new Swiper(".single-project-slider", {
+			cssMode: true,
+			navigation: {
+			  nextEl: ".swiper-button-next",
+			  prevEl: ".swiper-button-prev",
+			},
+			pagination: {
+			  el: ".swiper-pagination",
+			},
+			mousewheel: true,
+			keyboard: true,
+		  });
 
 		gsap.registerPlugin(ScrollTrigger);
 

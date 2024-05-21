@@ -170,6 +170,7 @@
 	.featured-project-card-area,
 	.services-contact-from ,
 	.project-area ,
+	.project-details-area,
 	.drone-services-area.bg-snow-drift{
 		padding: 70px 0;
 	}
@@ -381,6 +382,32 @@
 	}
 	/* project section end */
 
+	/* fun fat section start */
+	.fun-fat-area .row {
+		--bs-gutter-y: 20px;
+	}
+	.counter-wrapper-area {
+		padding: 50px 0;
+	}
+	.single-project-slider .swiper-button-prev, .single-project-slider .swiper-rtl .swiper-button-prev, .single-project-slider .swiper-button-next, .single-project-slider .swiper-rtl .swiper-button-next {
+		-webkit-transform: translate(-1px , -50%);
+		-ms-transform: translate(-1px , -50%);
+		transform: translate(-1px , -50%);
+		background: #0078C9;
+		height: 50px;
+		width: 50px;
+	}
+	.single-project-slider .swiper-button-next{
+		-webkit-transform: translate(1px, -50%);
+		-ms-transform: translate(1px , -50%);
+		transform: translate(1px , -50%);
+	}
+	.single-project-slider .swiper-button-prev svg, .single-project-slider .swiper-rtl .swiper-button-prev svg, .single-project-slider .swiper-button-next svg, .single-project-slider .swiper-rtl .swiper-button-next svg {
+		height: 22px;
+		width: 22px;
+	}
+	/* fun fat section end */
+
 
 
 	
@@ -415,9 +442,11 @@
 	.featured-project-card-area,
 	.services-contact-from ,
 	.project-area ,
+	.project-details-area,
 	.drone-services-area.bg-snow-drift{
 		padding: 50px 0;
 	}
+
 	/* all padding fix end*/
 
 
@@ -479,6 +508,27 @@
 	}
 
 	/* footer section end */
+
+	/* single project section start */
+	.banner-section.single-project {
+		min-height: 400px;
+	}
+	.banner-section.single-project .banner-title {
+		padding-top: 50px;
+	}
+	.project-details-area .row {
+		--bs-gutter-y: 30px;
+	}
+	/* single project section end */
+
+	/* fun fat section start */
+	.counter {
+		font-size: 50px;
+	}
+	.counter-wrapper-area {
+		clip-path: polygon(0 0, calc(100% - 57px) 0%, 100% 52px, 100% 100%, 100% 100%, 52px 100%, 0% calc(100% - 57px), 0 0);
+	}
+	/* fun fat section end */
 
 
 
@@ -610,7 +660,10 @@
 	.banner-section.small-banner {
 		min-height: 300px;
 	}
-	.banner-section::before , .banner-section.small-banner  .video-item {
+	.banner-section::before ,
+	.banner-section.small-banner ,
+	.banner-section .video-item ,
+	.banner-section.small-banner  .video-item {
 		clip-path: polygon(0 0, 100% 0%, 100% 100%, 70px 100%, 0 calc(100% - 70px));
 	}
 	.banner-section.small-banner .main-title {
