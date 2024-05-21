@@ -255,19 +255,64 @@ h6 {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
-	display: inline-block;
-	width: 151px;
-	line-height: 63px;
-	text-align: center;
+    display: inline-block;
+    text-align: center;
+    padding: 22px 24px;
+	position: relative;
+	z-index: 1;
+	line-height: 1.2;
+	transition: all 0.3s linear;
+	clip-path: polygon(
+		0 0,
+		calc(100% - 15px) 0%,
+		100% 15px,
+		100% 100%,
+		100% 100%,
+		15px 100%,
+		0% calc(100% - 15px),
+		0 0
+	);
 }
-.transparent-btn svg {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.transparent-btn-border{
+	background-image: url('../images/transparent/white-border.png');
+	background-position: center;
+    background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+    width: 100%;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s linear;
 }
-.transparent-btn.small-width{
-	width: 126px;
+.back-member-btn .transparent-btn-border{
+	background-image: url('../images/transparent/blue-border.png');
 }
+.construction-services-card:hover .transparent-btn ,
+.transparent-btn:hover{
+	background-color: #0060a1;
+	color: #fff;
+	clip-path: polygon(
+		0 0,
+		calc(100% - 15px) 0%,
+		100% 15px,
+		100% 100%,
+		100% 100%,
+		15px 100%,
+		0% calc(100% - 15px),
+		0 0
+	);
+	
+}
+.construction-services-card:hover .transparent-btn-border,
+.transparent-btn:hover .transparent-btn-border{
+	opacity: 0;
+	visibility: hidden;
+}
+
+
 .read-btn {
     color: #767676;
 	transition: all 0.3s linear;
@@ -1003,7 +1048,9 @@ input:focus , textarea:focus{
 	display: block;
 }
 
-.about-inner-info h2 {
+.about-inner-info h2 , 
+.gallery-content-info p,
+.content-block-content p{
 	margin-bottom: 24px;
 }
 .about-inner-info {
@@ -1453,6 +1500,9 @@ input:focus , textarea:focus{
     background-color: #fff;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 118px 100%, 0 calc(100% - 112px));
 }
+.banner-section.small-banner.small-height{
+    min-height: 326px;
+}
 .banner-section.small-banner .main-title {
   margin-bottom: 0;
   font-size: 85px;
@@ -1478,8 +1528,9 @@ input:focus , textarea:focus{
   line-height: 1.2;
 }
 .construcation-content p {
-  color: #000;
-  font-size: 16px;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 24px;
 }
 .construcation-content{
   max-width: 853px;
@@ -1507,15 +1558,8 @@ input:focus , textarea:focus{
 	transition: all 0.3s linear;
 	min-height: 96px;
 }
-.construction-services-card:hover .transparent-btn , .transparent-btn.small-width:hover {
-    background: #0078c9;
-    color: #fff;
-    clip-path: polygon(0 0, calc(100% - 15px) 0%, 100% 15px, 100% 100%, 100% 100%, 15px 100%, 0% calc(100% - 15px), 0 0);
-}
-.construction-services-card:hover .transparent-btn svg , .transparent-btn.small-width:hover svg{
-	opacity: 0;
-	visibility: hidden;
-}
+
+
 .construction-services-card:hover h6{
 	color: #0078C9;
 }
@@ -1598,9 +1642,9 @@ input:focus , textarea:focus{
     padding-left: 0;
     padding-right: 14px;
 }
-.content-block-content p{
-	margin-bottom: 24px;
-}
+
+
+
 .content-block-img img{
 	clip-path: polygon(0 0, calc(100% - 48px) 0%, 100% 48px, 100% 100%, 100% 100%, 48px 100%, 0% calc(100% - 48px), 0 0);
 }
@@ -1913,5 +1957,145 @@ input:focus , textarea:focus{
     padding-bottom: 112px;
 }
 /* about video section end */
+
+
+/* core value section start */
+.core-value-wrapper {
+    padding: 380px 0 321px;
+}
+.blue-overlay::before , .gary-overlay::before{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #0078C9;
+	mix-blend-mode: multiply;
+	content: "";
+	z-index: -1;
+}
+.gary-overlay::before{
+	background: #797979;
+}
+.core-value-title {
+    font-size: 45px;
+    letter-spacing: -0.9px;
+    padding-right: 35px;
+}
+.core-value-content{
+    max-width: 557px;
+}
+.core-value-area {
+    padding: 60px 0 162px;
+}
+/* core value section end */
+
+/* our team section start */
+
+.team-member-card {
+    background: transparent;
+	transition: all 0.3s linear;
+}
+
+.team-member-img .magnum-btn {
+    width: 107px;
+    height: 90px;
+    position: absolute;
+    bottom: 19px;
+    right: 23px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s linear;
+}
+.team-member-card:hover .magnum-btn{
+	opacity: 1;
+	visibility: visible;
+}
+.our-team-area {
+    padding-bottom: 210px;
+}
+.team-member-card::before {
+    position: absolute;
+    left: -9px;
+    top: -9px;
+    height: calc(100% + 18px);
+    width: calc(100% + 18px);
+    background: #F5F5F5;
+    content: "";
+    z-index: -1;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s linear;
+}
+.team-member-card:hover::before {
+	visibility: visible;
+	opacity: 1;
+}
+.our-team-area .row {
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 24px;
+}
+/* our team section end */
+
+
+
+/* single member section start */
+.single-member-info-area {
+    padding: 67px 0 41px;
+}
+.member-img-info {
+    max-width: 526px;
+}
+.member-information-wrapper {
+    margin-top: 42px;
+}
+.member-name{
+    font-size: 38.118px;
+    line-height: 1;
+}
+.member-wrapper p{
+    font-size: 18px;
+}
+.member-information-inner-info {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.member-information-inner-info li {
+    margin-bottom: 14px;
+}
+.member-information-inner-info li:last-child{
+	margin-bottom: 0;
+}
+.member-wrapper {
+    margin-bottom: 17px;
+}
+.member-information-info {
+	padding-left: 32px;
+}
+.gallery-content-wrapper {
+    background-image: url('../images/gallery/gallery-content-shape.png');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 46px 0 19px;
+    margin-bottom: 56px;
+}
+
+.single-member-gallery-wrapper {
+    padding-bottom: 192px;
+} 
+.gallery-img-wrapper .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 20px;
+}
+.gallery-img-wrapper .col-lg-4:first-child img{
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 50px 100%, 0 calc(100% - 50px));
+}
+.gallery-img-wrapper .col-lg-4:last-child img{
+	clip-path: polygon(0 0, calc(100% - 50px) 0%, 100% 50px, 100% 100%, 100% 100%, 0px 100%, 0% 100%, 0 0);
+}
+
+/* single member section end */
 
 /* about page css */

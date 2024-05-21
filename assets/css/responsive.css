@@ -170,6 +170,7 @@
 	.featured-project-card-area,
 	.services-contact-from ,
 	.project-area ,
+	.core-value-area ,
 	.project-details-area,
 	.drone-services-area.bg-snow-drift{
 		padding: 70px 0;
@@ -408,6 +409,44 @@
 	}
 	/* fun fat section end */
 
+	/* core value section section start */
+	.core-value-wrapper {
+		padding: 200px 0;
+	}
+	/* core value section section end */
+
+	/* our team section start */
+	.our-team-area {
+		padding-bottom: 50px;
+	}
+	/* our team section end */
+
+	/* single team member section start */
+	.member-information-wrapper .row {
+		--bs-gutter-y: 30px;
+	}
+	.member-img-info {
+		max-width: 100%;
+	}
+	.member-information-info {
+		padding-left: 0;
+	}
+	.single-member-info-area {
+		padding: 50px 0 20px;
+	}
+	.member-information-wrapper {
+		margin-top: 20px;
+	}
+	.gallery-content-wrapper {
+		background-size: 100%;
+		padding: 30px 0 15px;
+		margin-bottom: 30px;
+	}
+	.single-member-gallery-wrapper {
+		padding-bottom: 50px;
+	}
+	/* single team member section end */
+
 
 
 	
@@ -442,6 +481,7 @@
 	.featured-project-card-area,
 	.services-contact-from ,
 	.project-area ,
+	.core-value-area ,
 	.project-details-area,
 	.drone-services-area.bg-snow-drift{
 		padding: 50px 0;
@@ -459,9 +499,7 @@
 		left: -30px;
 	}
 
-	.magnum-btn {
-		padding: 14px 18px;
-	}
+
 
 	/* header section end */
 	/* innovators sectoin start */
@@ -672,6 +710,22 @@
 	/* services banner section end */
 	
 	/* services page css */
+
+	/* core value section section start */
+	.core-value-wrapper {
+		padding: 100px 0;
+	}
+	.core-value-title {
+		font-size: 35px;
+		padding-right: 0px;
+	}
+	/* core value section section end */
+
+	/* single member section start */
+	.member-name {
+		font-size: 30px;
+	}
+	/* single member section end */
 
 	/* 575 end */
 }
