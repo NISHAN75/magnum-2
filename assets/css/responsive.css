@@ -22,7 +22,7 @@
 		left: -100px;
 	}
 	.banner-section.small-banner .main-title {
-		margin-bottom: 75px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -127,6 +127,19 @@
 	/* join us sectoin end */
 
 	/* services page css */
+
+	/* our client say area start */
+	.video-info {
+		max-width: 100%;
+		width: 100%;
+	}
+	.video-card-wrapper {
+		gap: 5px !important;
+	}
+	.our-client-say-area .container > .row {
+		--bs-gutter-y: 40px;
+	}
+	/* our client say area end */
 }
 
 /* max-width 1399 - min-width 992*/
@@ -172,6 +185,7 @@
 	.project-area ,
 	.core-value-area ,
 	.project-details-area,
+	.featured-project-card-area,
 	.drone-services-area.bg-snow-drift{
 		padding: 70px 0;
 	}
@@ -447,6 +461,66 @@
 	}
 	/* single team member section end */
 
+	/* content block wrapper section start */
+	.content-block-wrapper.sefety-block-wrapper .row {
+		margin-bottom: 50px;
+	}
+	.content-block-wrapper .row.flex-row-reverse{
+		flex-direction: column;
+	}
+	/* content block wrapper section end */
+
+	/* modification section start */
+	.modification-thumbnail {
+		position: static;
+		height: 500px;
+		width: 100%;
+	}
+	.modification-content-wrapper {
+		padding: 50px 40px;
+		max-width: 100%;
+	}
+	.modification-content-wrapper .content-block-counter {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	/* modification section end */
+
+	/* target  zero form section start */
+	.target-zero-form-area{
+		padding: 50px 0;
+		margin-bottom: 50px;
+	}
+	.target-zero-form .magnum-btn {
+		margin-top: 30px;
+	}
+	.target-zero-form .form-group {
+		margin-bottom: 18px;
+	}
+	/* target  zero form section end */
+
+	/* testimonial section start */
+	.client-video-wrapper .row {
+		--bs-gutter-y: 30px;
+	}
+	.quote-icon {
+		transform: translateX(0%);
+		left: 0;
+	}
+	.client-video-wrapper {
+		margin-bottom: 60px;
+	}
+	.quote-author-wrapper {
+		margin-top: 30px;
+	}
+	.clinet-testimonal-content {
+		padding: 0px 0 50px;
+	}
+	.our-client-say-area.single-testimonial {
+		padding: 50px 0 0;
+	}
+	/* testimonial section end */
+
 
 
 	
@@ -482,6 +556,7 @@
 	.services-contact-from ,
 	.project-area ,
 	.core-value-area ,
+	.featured-project-card-area,
 	.project-details-area,
 	.drone-services-area.bg-snow-drift{
 		padding: 50px 0;
@@ -567,6 +642,19 @@
 		clip-path: polygon(0 0, calc(100% - 57px) 0%, 100% 52px, 100% 100%, 100% 100%, 52px 100%, 0% calc(100% - 57px), 0 0);
 	}
 	/* fun fat section end */
+
+	/* our client say area start */
+	.our-client-say-area .container > .row {
+		--bs-gutter-y: 20px;
+	}
+	.our-client-say-area{
+		padding: 45px 0 0;
+	}
+	.our-client-say-area h4 {
+		margin-bottom: 20px;
+	}
+	
+	/* our client say area end */
 
 
 
@@ -727,6 +815,22 @@
 	}
 	/* single member section end */
 
+	/* modification section start */
+	.modification-thumbnail {
+		height: 250px;
+	}
+	/* modification section end */
+
+	/* testimonial section start */
+	.clinet-testimonal-content {
+		padding-bottom: 20px;
+	}
+	.content-list {
+		padding-left: 8px;
+
+	}
+	/* testimonial section end */
+
 	/* 575 end */
 }
 
@@ -744,6 +848,9 @@
 		font-size: 48px;
 	}
 	.services-contact-title {
+		font-size: 48px;
+	}
+	.content-block-counter .counter {
 		font-size: 48px;
 	}
 
@@ -836,6 +943,18 @@
 		width: 35px;
 	}
 	/* project section end */
+	
+	/* our client say area start */
+	.video-icon-wrapper .play-icon {
+		width: 70px;
+		height: 70px;
+	}
+	.video-icon-wrapper .play-icon svg {
+		margin-left: 6px;
+		height: 20px;
+		width: 20px;
+	}
+	/* our client say area end */
 }
 
 /* max-width 383 */
@@ -884,6 +1003,7 @@
 		padding: 40px;
 	}
 	/* project section end */
+	
 }
 
 /* max-width 383 */

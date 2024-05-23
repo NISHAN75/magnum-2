@@ -55,9 +55,11 @@ img {
 .container {
 	max-width: 1168px;
 }
-
 .container-md {
 	max-width: 1344px;
+}
+.container-xs{
+	max-width: 690px;
 }
 
 /* heading  style*/
@@ -1135,17 +1137,17 @@ input:focus , textarea:focus{
 }
 
 .play-icon {
-	width: 174px;
-	height: 174px;
-	display: block;
-	background: #0078c9;
-	border-radius: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	transition: all 0.3s linear;
+    width: 174px;
+    height: 174px;
+    display: block;
+    background: rgba(0, 120, 201, 1);
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 0.3s linear;
 }
-.play-icon:hover {
-	background-color: #0060a1;
+.play-icon:hover , .video-icon-wrapper .play-icon:hover {
+    background-color: rgba(0, 96, 161, 1);
 }
 .play-icon svg {
 	margin-left: 20px;
@@ -1604,14 +1606,14 @@ input:focus , textarea:focus{
 }
 
 .featured-project-card-img  .magnum-btn {
-    padding: 55px 70px;
-	clip-path: polygon(0 0, calc(100% - 44px) 0%, 100% 44px, 100% 100%, 100% 100%, 44px 100%, 0% calc(100% - 44px), 0 0);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50% , -50%);
-	opacity: 0;
-	visibility: hidden;
+    padding: 49px 64px;
+    clip-path: polygon(0 0, calc(100% - 44px) 0%, 100% 44px, 100% 100%, 100% 100%, 44px 100%, 0% calc(100% - 44px), 0 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    visibility: hidden;
 }
 .featured-project-card-img:hover .magnum-btn{
 	opacity: 1;
@@ -1653,7 +1655,9 @@ input:focus , textarea:focus{
     margin-bottom: 20px;
 	font-weight: 300;
 }
-.mg-content-info h6 , .project-details-info h6{
+.mg-content-info h6 ,
+.video-info-conent h6,
+.project-details-info h6{
 	line-height: 1.35;
 
 }
@@ -1839,7 +1843,7 @@ input:focus , textarea:focus{
     font-weight: 300;
     line-height: 1.4;
 }
-.counter-card h6 {
+.counter-card h6 , .counter-title{
     color: #C5E8FF;
     font-size: 16px;
     font-weight: 600;
@@ -2053,7 +2057,9 @@ input:focus , textarea:focus{
     font-size: 38.118px;
     line-height: 1;
 }
-.member-wrapper p{
+.member-wrapper p ,
+.video-info-conent p
+{
     font-size: 18px;
 }
 .member-information-inner-info {
@@ -2099,3 +2105,202 @@ input:focus , textarea:focus{
 /* single member section end */
 
 /* about page css */
+
+
+
+/* sefety page css */
+
+/* sefety content block section start */
+.content-block-counter .counter{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+}
+.content-block-counter .counter-title {
+	color: #000;
+}
+.content-block-wrapper .content-block-counter {
+    margin-top: 44px;
+}
+.content-block-wrapper.sefety-block-wrapper .row {
+    margin-bottom: 107px;
+}
+.content-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-left: 35px;
+    margin-top: -8px;
+}
+.content-list li {
+    font-weight: 600;
+    line-height: 1.74;
+    position: relative;
+    z-index: 1;
+	padding-left: 11px;
+}
+.content-list li::before {
+    position: absolute;
+    left: -7px;
+    top: 12px;
+    height: 5px;
+    width: 5px;
+    background-color: #000;
+    content: "";
+    border-radius: 50%;
+}
+.content-block-wrapper.living-with .content-list {
+    margin-bottom: 15px;
+}
+/* sefety content block section end */
+
+/* modification content section start */
+.modification-wrapper{
+	background-color: #E8E8E8;
+}
+.modification-content-wrapper {
+    padding: 80px 44px 67px 44px;
+    max-width: 422px;
+}
+.modification-content-wrapper .content-block-counter {
+    border-bottom: 1px solid #000;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+}
+.modification-thumbnail {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: calc(100% - 422px);
+}
+/* modification content section end */
+
+
+/* target-zero-form content section start */
+.form-check-input {
+    border: 1px solid #0078C9;
+	height: 18px;
+	width: 18px;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 50%;
+}
+.form-check-input:checked {
+    background-color: #0078C9;
+    border-color: #0078C9;
+}
+.form-check-input:focus {
+    border-color: #0078C9;
+    outline: 0;
+	box-shadow: 0 0 0 .25rem rgba(0, 120, 201, 0.3);
+}
+.form-check-label {
+    color: #313131;
+}
+.target-zero-form-area {
+    padding: 80px 0;
+    margin-bottom: 118px;
+}
+.target-zero-form .form-group {
+    margin-bottom: 26px;
+}
+.full-checkbox .form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+.full-checkbox .check-box-info {
+    margin-bottom: 7px;
+}
+.target-zero-form textarea{
+	color: #313131;
+}
+.target-zero-form .magnum-btn{
+	margin-top: 48px;
+}
+/* target-zero-form content section end*/
+
+/* sefety page css */
+
+
+
+/* markets page css */
+
+/* our client say section start */
+.our-client-say-area {
+    padding: 76px 0 0px;
+}
+.video-icon-wrapper svg{
+	height: 51px;
+	width: 51px;
+}
+.video-icon-wrapper svg path{
+	fill: #fff;
+}
+.video-icon-wrapper .play-icon {
+    width: 99px;
+    height: 99px;
+	background: rgba(0, 120, 201, 0.85);
+}
+.video-icon-wrapper .play-icon svg {
+    margin-left: 11px;
+}
+.video-icon-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.our-client-say-area h4 {
+    line-height: 1.2;
+    margin-bottom: 56px;
+}
+.video-info {
+    max-width: 326px;
+}
+.client-video-wrapper .row {
+    --bs-gutter-y: 71px;
+}
+
+/* our client say section start */
+
+
+/* testimonial section start */
+.clinet-testimonal-content {
+    padding: 0px 0 103px;
+    max-width: 730px;
+}
+.client-video-wrapper {
+    margin-bottom: 144px;
+}
+
+.quote-author-wrapper h6 ,
+.quote-info blockquote {
+    font-size: 18px;
+}
+.quote-author-wrapper {
+    margin-top: 51px;
+}
+.quote-icon {
+    position: absolute;
+    top: -27px;
+    transform: translateX(-100%);
+    left: -18px;
+	z-index: -1;
+}
+.clinet-testimonial-info{
+    max-width: 660px;
+}
+.bottom-border {
+    border-bottom: 1px solid #000;
+}
+.our-client-say-area.single-testimonial {
+    padding: 133px 0 0;
+}
+
+/* testimonial section end */
+
+/* markets page css */
+
+
+
