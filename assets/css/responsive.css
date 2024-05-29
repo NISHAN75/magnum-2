@@ -148,6 +148,11 @@
 
 	}
 	/* contact-form-wrapper section end */
+	/* news featured post section start */
+	.news-featured-post-content {
+		padding: 18px 45px;
+	}
+	/* news featured post section end */
 }
 
 /* max-width 1399 - min-width 992*/
@@ -194,6 +199,7 @@
 	.core-value-area ,
 	.project-details-area,
 	.featured-project-card-area,
+	.news-article-section-area ,
 	.drone-services-area.bg-snow-drift{
 		padding: 70px 0;
 	}
@@ -564,6 +570,23 @@
 	}
 	/* project details section end */
 
+	/* news featured post section start */
+	.news-featured-post-content {
+		padding: 50px;
+	}
+	.news-article-section-area .row {
+		--bs-gutter-y: 30px;
+	}
+	/* news featured post section end */
+
+	/* news article section start */
+	.pagination-wrapper {
+		gap: 20px;
+		margin-top: 50px;
+	}
+
+	/* news article section end  */
+
 
 
 	
@@ -601,6 +624,7 @@
 	.featured-project-card-area,
 	.services-contact-from ,
 	.project-area ,
+	.news-article-section-area ,
 	.core-value-area ,
 	.featured-project-card-area,
 	.project-details-area,
@@ -876,6 +900,11 @@
 
 	}
 	/* testimonial section end */
+	/* news featured post section start */
+	.news-featured-post-content {
+		padding: 30px 20px;
+	}
+	/* news featured post section end */
 
 	/* 575 end */
 }
@@ -1004,6 +1033,12 @@
 		width: 20px;
 	}
 	/* our client say area end */
+
+	/* news featured post section start  */
+	.pagination-wrapper {
+		flex-direction: column;
+	}
+	/* news featured post section end */
 }
 
 /* max-width 383 */

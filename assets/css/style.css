@@ -319,6 +319,7 @@ h6 {
     color: #767676;
 	transition: all 0.3s linear;
 }
+.news-featured-post-content .read-btn:hover ,
 .read-btn:hover{
 	color: #000000;
 }
@@ -1657,6 +1658,9 @@ input:focus , textarea:focus{
 }
 .mg-content-info h6 ,
 .video-info-conent h6,
+.mg-personal-information h6,
+.news-article-card-content h6,
+.news-featured-post-content h6,
 .project-details-info h6{
 	line-height: 1.35;
 
@@ -2412,9 +2416,7 @@ input:focus , textarea:focus{
 .mg-personal-information .container {
     max-width: 974px;
 }
-.mg-personal-information h6 {
-    line-height: 1.35;
-}
+
 .bg-snow-drift .contact-form-wrapper {
     max-width: 100%;
 }
@@ -2479,7 +2481,84 @@ input:focus , textarea:focus{
 
 
 /* mg personal information section end */
+/* news featured post section start */
+.news-featured-post-area {
+    margin-top: -86px;
+	z-index: 9;
+}
+.news-featured-post-content .sub-title {
+    color: #B0DFFF;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.4;
+	margin-bottom: 10px;
+    letter-spacing: 3.57px;
+}
+.news-featured-post-content {
+    padding: 52px 58px 52px 68px;
+}
+.news-featured-post-content .read-btn{
+	color: #fff;
+}
+.news-featured-post-content p{
+	margin-bottom: 8px;
+}
 
+/* news featured post section end */
+
+
+/* news article section start */
+.news-article-section-area {
+    padding: 57px 0 159px;
+}
+.news-article-section-area .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: 57px;
+}
+.pagination-wrapper .magnum-btn {
+    clip-path: polygon(
+  0 0,
+  calc(100% - 16px) 0%,
+  100% 16px,
+  100% 100%,
+  100% 100%,
+  16px 100%,
+  0% calc(100% - 16px),
+  0 0
+ );
+}
+.pagination-dots-wrapper span {
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+    background: #B8B8B8;
+}
+.pagination-wrapper{
+	gap: 49px;
+	margin-top: 99px;
+}
+.pagination-dots-wrapper{
+	gap: 16px;
+}
+.pagination-dots-wrapper .active{
+	background: #0078C9;
+}
+.pagination-wrapper .previous-button  .transparent-btn-border{
+	background-image: url(../images/transparent/pagination-border.png);
+}
+.pagination-wrapper  .transparent-btn-border{
+	background-image: url(../images/transparent/next-button-border.png);
+}
+.pagination-wrapper .transparent-btn {
+    color: #0078C9;
+	background: transparent;
+}
+.pagination-wrapper .transparent-btn .active ,
+.pagination-wrapper .transparent-btn:hover{
+	color: #fff;
+	background: #0078C9;
+}
+/* news article section end */
 
 
 
