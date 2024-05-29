@@ -573,7 +573,7 @@ html.lenis body {
     max-width: 519px;
 }
 
-.contact-form-wrapper .form-group label{
+.contact-form-wrapper  label{
 	color: #E0E0E0;
 	font-size: 16px;
 	font-weight: 600;
@@ -2144,8 +2144,8 @@ input:focus , textarea:focus{
     position: absolute;
     left: -7px;
     top: 12px;
-    height: 5px;
-    width: 5px;
+    height: 4px;
+    width: 4px;
     background-color: #000;
     content: "";
     border-radius: 50%;
@@ -2153,6 +2153,7 @@ input:focus , textarea:focus{
 .content-block-wrapper.living-with .content-list {
     margin-bottom: 15px;
 }
+
 /* sefety content block section end */
 
 /* modification content section start */
@@ -2297,10 +2298,188 @@ input:focus , textarea:focus{
 .our-client-say-area.single-testimonial {
     padding: 133px 0 0;
 }
-
 /* testimonial section end */
 
 /* markets page css */
+
+
+
+/* career page css */
+/* open position info section start */
+.drone-services-center-shape {
+    left: auto;
+    transform: translate(0% , -50%);
+    width: 520px;
+    z-index: -1;
+    right: 119px;
+}
+.drone-services-area.open-position-info .drone-services-center-shape {
+    right: 121px;
+}
+.drone-services-area.open-position-info .mg-content-wrapper .row {
+    --bs-gutter-y: 69px;
+}
+.drone-services-area.open-position-info {
+    margin-top: 39px;
+}
+/* open position info section start */
+
+/*  position-detail section start  */
+.construction-area.position-detail-info h1 {
+    color: #030304;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.construction-area.position-detail-info {
+    padding: 55px 0;
+}
+.position-details-wrpper{
+	padding-bottom: 133px;
+}
+
+.position-details-wrpper .content-list {
+    padding-left: 0;
+    margin-top: 0;
+}
+.position-details-wrpper  .content-list li {
+    padding-left: 25px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.position-details-wrpper  .content-list li::before {
+    left: 9px;
+}
+.position-details-bottom-wrapper {
+    margin-top: 32px;
+}
+.position-details-bottom-wrapper p {
+    color: #8D8D8D;
+    margin-bottom: 45px;
+}
+
+/*  position-detail section start  */
+
+
+
+/* career page css */
+
+/* heavy equipment operator start */
+.heavy-equipment-operator-tags {
+    padding: 62px 0 53px;
+}
+.operator-tag {
+    background: #E9E9E9;
+    padding: 11px 18px;
+	transition: all 0.3s linear;
+}
+.operator-tag h6 {
+    color: #B9B9B9;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+	transition: all 0.3s linear;
+}
+.operator-tag p {
+    color: #B9B9B9;
+    font-size: 18px;
+	transition: all 0.3s linear;
+}
+.operator-tag.active ,
+.operator-tag:hover{
+	background-color: #0078C9;
+}
+.operator-tag.active h6 ,
+.operator-tag:hover h6{
+	color: #FFF;
+}
+.operator-tag.active p ,
+.operator-tag:hover p{
+	color: #FFF;
+}
+.operator-tag-wrapper{
+	gap: 12px;
+}
+/* heavy equipment operator end*/
+
+/* mg personal information section start*/
+
+.mg-personal-information {
+    padding: 72px 0 91px;
+}
+.mg-personal-information .container {
+    max-width: 974px;
+}
+.mg-personal-information h6 {
+    line-height: 1.35;
+}
+.bg-snow-drift .contact-form-wrapper {
+    max-width: 100%;
+}
+.bg-snow-drift .contact-form-wrapper  label{
+	color: #000;
+	text-transform: none;
+}
+.bg-snow-drift input[type="text"], 
+.bg-snow-drift input[type="email"], 
+.bg-snow-drift input[type="tel"], 
+.bg-snow-drift input[type="number"], 
+.bg-snow-drift input[type="password"], 
+.bg-snow-drift input[type="url"], 
+.bg-snow-drift textarea {
+    color: #000;
+    background: #FFF;
+	border: 1px solid #0078C9;
+}
+.bg-snow-drift ::placeholder{
+	color: #000;
+}
+.bg-snow-drift .contact-form-wrapper .row{
+	--bs-gutter-x:18px;
+}
+.bg-snow-drift .nice-select{
+	background-color:#FFF;
+	color: #505050;
+}
+.bg-snow-drift  .nice-select .option {
+    color: #fff;
+}
+.mg-personal-information .bottom-wrapper {
+    margin-top: 12px;
+}
+.mg-personal-information-title p{
+	color:#000;
+	font-weight: 600;
+}
+.contact-form-wrapper .contact-inner-title {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+.contact-form-wrapper .add-experience-button{
+	position: relative;
+	z-index: 1;
+	margin-top:65px;
+}
+.contact-form-wrapper .add-experience-button::before{
+	position: absolute;
+	left: 0;
+	top: -38px;
+	height: 1px;
+	width: calc(100% + 194px);
+	margin-left: -97px;
+	content: "";
+	background-color: #A0A0A0;
+}
+.contact-form-wrapper .form-group .form-grounp-inner{
+	gap: 29px;
+}
+
+
+/* mg personal information section end */
+
 
 
 

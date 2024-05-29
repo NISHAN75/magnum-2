@@ -140,6 +140,14 @@
 		--bs-gutter-y: 40px;
 	}
 	/* our client say area end */
+
+	/* contact-form-wrapper section start */
+	.contact-form-wrapper .add-experience-button::before {
+		margin-left: 0px;
+		width: 100%;
+
+	}
+	/* contact-form-wrapper section end */
 }
 
 /* max-width 1399 - min-width 992*/
@@ -188,6 +196,9 @@
 	.featured-project-card-area,
 	.drone-services-area.bg-snow-drift{
 		padding: 70px 0;
+	}
+	.mg-personal-information{
+		padding: 50px 0;
 	}
 	/* all padding fix end*/
 
@@ -468,6 +479,9 @@
 	.content-block-wrapper .row.flex-row-reverse{
 		flex-direction: column;
 	}
+	.contact-form-wrapper .form-group .form-grounp-inner {
+		gap: 20px;
+	}
 	/* content block wrapper section end */
 
 	/* modification section start */
@@ -521,6 +535,35 @@
 	}
 	/* testimonial section end */
 
+	/* open position info section start */
+	.drone-services-area.open-position-info .mg-content-wrapper .row {
+		--bs-gutter-y: 30px;
+	}
+	.drone-services-area.open-position-info .mg-content-wrapper .col-lg-4:nth-child(3){
+		display: none;
+	}
+	.drone-services-center-shape {
+		left: 50%;
+		transform: translate(-50% , -50%);
+		right: auto;
+	}
+	/* open position info section end */
+
+	/* project details section start */
+	.position-details-wrpper .row {
+		--bs-gutter-y: 30px;
+	}
+	.position-details-wrpper {
+		padding-bottom: 50px;
+	}
+	.position-details-bottom-wrapper p {
+		margin-bottom: 30px;
+	}
+	.construction-area.position-detail-info h1 {
+		margin-bottom: 10px;
+	}
+	/* project details section end */
+
 
 
 	
@@ -544,6 +587,9 @@
 		font-size: 32px;
 	}
 	.banner-section.small-banner .main-title{
+		font-size: 62px;
+	}
+	.construction-area.position-detail-info h1 {
 		font-size: 62px;
 	}
 
@@ -851,6 +897,9 @@
 		font-size: 48px;
 	}
 	.content-block-counter .counter {
+		font-size: 48px;
+	}
+	.construction-area.position-detail-info h1 {
 		font-size: 48px;
 	}
 

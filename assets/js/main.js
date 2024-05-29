@@ -45,6 +45,17 @@
 			},
 		});
 
+		// input file trigger
+		$(".custom-file-btn").click(function(){
+			$("#resume").click();
+		});
+		$("#resume").change(function(){
+			let fileName = $(this).val().split("\\").pop();
+		    $(".pdf-icon").removeClass("d-none");
+		    $(".pdf-icon").addClass("d-block");
+			$("#fileName").text(fileName);
+		});
+
 		// swiper
 		let projectSlider = new Swiper(".featured-project", {
 			slidesPerView: 1,
