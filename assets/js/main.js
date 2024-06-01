@@ -57,6 +57,32 @@
 		});
 
 		// swiper
+		// most-popular-item-slider
+		let gallery_section1 = new Swiper(".gallery-section-1-slider", {
+			slidesPerView: "auto",
+			spaceBetween: 4,
+			freeMode: true,
+			loop: true,
+			speed: 10000, // Adjust this value to control the speed
+			autoplay: {
+				delay: 0,
+				disableOnInteraction: false, // Ensure autoplay continues even after user interaction
+			},
+		});
+		let gallery_section2 = new Swiper(".gallery-section-2-slider", {
+			slidesPerView: "auto",
+			spaceBetween: 4,
+			freeMode: true,
+			rtl: false,
+			loop: true,
+			speed: 10000, // Adjust this value to control the speed
+			autoplay: {
+				delay: 0,
+				disableOnInteraction: false, // Ensure autoplay continues even after user interaction
+			},
+		});
+		
+		// project Slider
 		let projectSlider = new Swiper(".featured-project", {
 			slidesPerView: 1,
 			centeredSlides: true,
@@ -73,6 +99,7 @@
 				prevEl: ".swiper-button-prev",
 			},
 		});
+		// single Project slider
 		let singleProject = new Swiper(".single-project-slider", {
 			cssMode: true,
 			navigation: {

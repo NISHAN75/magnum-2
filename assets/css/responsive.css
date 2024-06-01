@@ -34,6 +34,14 @@
 		left: 0;
 		max-width: 100%;
 	}
+
+	/* history gallery section start */
+	.h-content-2 {
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	/* history gallery section end */
 }
 
 /* max-width 1199 */
@@ -153,6 +161,79 @@
 		padding: 18px 45px;
 	}
 	/* news featured post section end */
+
+	/* contact form section start */
+	.right-contact-area {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.left-contact-area{
+		max-width: 100%;
+	}
+	.right-contact-area,
+	.left-contact-area{
+		padding: 50px 40px;
+	}
+	/* contact form section end */
+
+	/* history gallery section start */
+	.h-gallery-1 {
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.h-gallery-2 {
+		max-width: 100%;
+	}
+	.h-gallery-3 {
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.h-gallery-4 {
+		max-width: 100%;
+		margin-left: 0;
+	}
+	.h-gallery-5 {
+		max-width: 100%;
+		margin-left: 0;
+		margin-top: 0;
+	}
+	.h-content-1 {
+		margin-left: 0;
+	}
+	.history-gallery-area .container .row:nth-child(2) {
+		margin-top: -80px;
+		--bs-gutter-x: 40px;
+	}
+	.history-gallery-area .container .row:nth-child(3) {
+		margin-top: 0px;
+		--bs-gutter-x: 40px;
+		--bs-gutter-y:50px;
+		align-items: center;
+	}
+	.history-gallery-area .container .row:nth-child(4) {
+		margin-top: 0px;
+		margin-bottom: 35px;
+		--bs-gutter-y:50px;
+		--bs-gutter-x: 40px;
+	}
+	.h-gallery-8 {
+		margin-left: -121px;
+		max-width: 100%;
+		z-index: -1;
+	}
+	.dual-img {
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.history-gallery-area .container .row:nth-child(6) {
+		margin-top: -50px;
+		--bs-gutter-x: 40px;
+	}
+	.h-gallery-10 {
+		max-width: 300px;
+	}
+
+	/* history gallery section end */
 }
 
 /* max-width 1399 - min-width 992*/
@@ -185,19 +266,25 @@
 	h6 {
 		font-size: 20px;
 	}
+	.banner-section.single-project .main-title,
 	.banner-section.small-banner .main-title{
 		font-size: 70px;
 	}
+	
 
 
 
 	/* all padding fix start*/
-	.construction-area ,  .construction-services-area
+	.construction-area ,  
+	.construction-services-area
 	.featured-project-card-area,
 	.services-contact-from ,
+	.contact-form-area,
 	.project-area ,
 	.core-value-area ,
+	.open-positions-wrapper,
 	.project-details-area,
+	.single-news-section-area ,
 	.featured-project-card-area,
 	.news-article-section-area ,
 	.drone-services-area.bg-snow-drift{
@@ -205,6 +292,9 @@
 	}
 	.mg-personal-information{
 		padding: 50px 0;
+	}
+	.open-position-gallery-area{
+		padding-bottom: 50px;
 	}
 	/* all padding fix end*/
 
@@ -226,10 +316,10 @@
 	.banner-section {
 		min-height: 700px;
 	}
-
-	.main-title {
-		margin-bottom: 30px;
+	.banner-section.small-banner {
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 95px 100%, 0 calc(100% - 95px));
 	}
+
 
 	/* banner section end */
 
@@ -553,6 +643,18 @@
 		transform: translate(-50% , -50%);
 		right: auto;
 	}
+	.drone-services-area.open-position-info .drone-services-center-shape {
+		right: auto;
+		left: 0;
+		transform: none;
+	}
+	.open-position-inner-info {
+		flex-direction: column;
+		gap: 25px;
+	}
+	.position-inner-info {
+		width: 100%;
+	}
 	/* open position info section end */
 
 	/* project details section start */
@@ -587,6 +689,113 @@
 
 	/* news article section end  */
 
+	/* single news section start */
+	.single-news-small-img {
+		max-width: 100%;
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+	.single-news-section-area .back-member-btn {
+		margin-bottom: 35px;
+	}
+	.single-news-big-img {
+		margin-bottom: 35px;
+		margin-top: 35px;
+	}
+	.single-news-section-area .share-post {
+		margin-top: 35px;
+	}
+	
+
+	/* single news section end */
+
+	/* contact form section start */
+	.left-contact-area h4 {
+		margin-bottom: 25px;
+	}
+	.right-contact-area,
+	.left-contact-area{
+		padding: 50px 20px;
+	}
+
+	/* contact form section end */
+
+	/* open gallery section start */
+	.gallery-section-1-slider .swiper-slide, .gallery-section-2-slider .swiper-slide {
+		width: 300px;
+	}
+	/* open gallery section end */
+
+
+	/* history gallery section start */
+	.history-gallery-area .row{
+		--bs-gutter-y:50px;
+	}
+	.h-gallery-1 {
+		width: 100%;
+	}
+	.h-gallery-4 ,
+	.h-gallery-5 ,
+	.h-gallery-2 {
+		width: 100%;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.h-gallery-3 {
+		width: 100%;
+		margin-top: 0;
+	}
+	.history-gallery-area .container .row:nth-child(2) {
+		margin-top: 0px;
+		--bs-gutter-x: 24px;
+	}
+	.singgle-news-content p, .history-gallery p {
+		margin-bottom: 24px;
+	}
+	.h-gallery-6 {
+		max-width: 100%;
+	}
+	.h-gallery-7 {
+		width: 100%;
+		margin-left: auto;
+		margin-top: 0;
+		text-align: center;
+	}
+	.h-gallery-8 {
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.history-gallery-area .container .row:nth-child(6) {
+		margin-top: 0;
+		--bs-gutter-x: 24px;
+	}
+	.h-gallery-10 {
+		max-width: 100%;
+		margin-right: 25px;
+		margin-left: 25px;
+		margin-top: -60px;
+	}
+	.h-content-3 {
+		margin-top: 0;
+	}
+	.history-gallery-area .container .row:nth-child(7) {
+		margin-top: 0;
+	}
+	.h-gallery-11 {
+		margin-left: 0;
+		width: 100%;
+	}
+	.h-gallery-12 {
+		max-width: 100%;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	/* history gallery section end */
+
+	
+
+
 
 
 	
@@ -609,6 +818,7 @@
 	h3 {
 		font-size: 32px;
 	}
+	.banner-section.single-project .main-title,
 	.banner-section.small-banner .main-title{
 		font-size: 62px;
 	}
@@ -620,15 +830,19 @@
 	/* header section start */
 
 	/* all padding fix start*/
-	.construction-area , .construction-services-area 
+	.construction-area , 
+	.construction-services-area 
 	.featured-project-card-area,
 	.services-contact-from ,
 	.project-area ,
 	.news-article-section-area ,
+	.single-news-section-area ,
 	.core-value-area ,
 	.featured-project-card-area,
 	.project-details-area,
-	.drone-services-area.bg-snow-drift{
+	.contact-form-area ,
+	.open-positions-wrapper ,
+	.drone-services-area{
 		padding: 50px 0;
 	}
 
@@ -746,6 +960,7 @@
 		font-size: 24px;
 	}
 
+	.banner-section.single-project .main-title,
 	.banner-section.small-banner .main-title{
 		font-size: 56px;
 	}
@@ -905,6 +1120,12 @@
 		padding: 30px 20px;
 	}
 	/* news featured post section end */
+
+	/* open gallery section start */
+	.gallery-section-1-slider .swiper-slide, .gallery-section-2-slider .swiper-slide {
+		width: 250px;
+	}
+	/* open gallery section end */
 
 	/* 575 end */
 }
@@ -1087,6 +1308,14 @@
 		padding: 40px;
 	}
 	/* project section end */
+
+	/* open position section start  */
+	.position-inner-info {
+		width: 100%;
+		flex-direction: column;
+		gap: 15px;
+	}
+	/* open position section end */
 	
 }
 

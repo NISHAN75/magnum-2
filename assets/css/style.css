@@ -566,6 +566,9 @@ html.lenis body {
 .dark-bg{
 	background: #030304;
 }
+.bg-green-white{
+	background: #E8E8E8;
+}
 /* from design css */
 .contact-form-wrapper .form-group {
     margin-bottom: 25px;
@@ -653,6 +656,7 @@ input:focus , textarea:focus{
     color: #0078C9;
     font-weight: 700;
 }
+
 .nice-select.transparent-version .list {
     background-color: rgb(1, 105, 175);
     margin-top: 0;
@@ -664,6 +668,7 @@ input:focus , textarea:focus{
 .nice-select.transparent-version  .option:hover, .nice-select.transparent-version  .option.focus, .nice-select.transparent-version  .option.selected.focus {
     background-color: #005893;
 }
+.bg-green-white .nice-select::before ,
 .nice-select.transparent-version::before {
     position: absolute;
     right: 0;
@@ -673,6 +678,8 @@ input:focus , textarea:focus{
     background: #0078C9;
     content: "";
 }
+
+.bg-green-white .nice-select::after ,
 .nice-select.transparent-version:after {
     right: 26px;
     margin-right: -4px;
@@ -1021,6 +1028,12 @@ input:focus , textarea:focus{
 .banner-title {
 	padding-top: 93px;
 }
+.banner-section.single-project .main-title {
+    font-size: 85px;
+    font-weight: 500;
+    line-height: 1.2;
+	letter-spacing: normal;
+}
 /* banner section end */
 
 /* about us section start */
@@ -1272,7 +1285,16 @@ input:focus , textarea:focus{
 .featured-project-area .section-title-wrapper {
 	margin-bottom: 72px;
 }
-
+.project-details-content h4,
+.history-gallery h4,
+.section-title-wrapper h4 ,
+.construcation-content h4,
+.content-block-content h4,
+.join-our-team-info h4 ,
+.contact-join-our-team h4 ,
+.headquarters-info h4{
+    line-height: 1.2;
+}
 .featured-project-content {
 	position: absolute;
 	left: 48px;
@@ -1366,7 +1388,7 @@ input:focus , textarea:focus{
 	font-family: "mundial", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
-	line-height: 150%;
+	line-height: 1.5;
 	display: inline-block;
 	margin-bottom: 20px;
 	-webkit-transition: all 0.3s linear;
@@ -1382,6 +1404,8 @@ input:focus , textarea:focus{
 	width: 100%;
 	background: #e6e6e6;
 	content: "";
+	opacity: 1;
+	visibility: visible;
 	-webkit-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
@@ -1430,7 +1454,8 @@ input:focus , textarea:focus{
 	opacity: 1;
 }
 .diretions-title:hover::before {
-	display: none;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .footer-item-wrapper ul li {
@@ -1525,11 +1550,9 @@ input:focus , textarea:focus{
 
 /* construction section start */
 .construction-area {
-  padding: 103px 0 88px;
+    padding: 90px 0 88px;
 }
-.construcation-content h4 {
-  line-height: 1.2;
-}
+
 .construcation-content p {
     color: #000;
     font-size: 16px;
@@ -1555,6 +1578,9 @@ input:focus , textarea:focus{
     border-bottom: 1px solid #0078C9;
     color: #fff;
 	transition: all 0.3s linear;
+}
+.construction-services-card .transparent-btn {
+    margin-top: 7px;
 }
 .construction-services-card p{
 	color: #fff;
@@ -1631,10 +1657,15 @@ input:focus , textarea:focus{
 .drone-services-area {
     padding: 72px 0;
 }
+.drone-services-area.services-wrapper-info .drone-services-center-shape {
+    bottom: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 .drone-services-center-shape {
     left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
+    bottom: 104px;
+    transform: translateX(-50%);
     width: 739px;
     z-index: -1;
 }
@@ -1699,9 +1730,7 @@ input:focus , textarea:focus{
     object-fit: cover;
     position: absolute;
 }
-.join-our-team-info h4 {
-    line-height: 1.2;
-}
+
 .join-our-team-info .bottom-btn-wrapper{
 	gap: 58px;
 }
@@ -1728,6 +1757,7 @@ input:focus , textarea:focus{
 .drone-services-area.magnum-delivers .mg-content-wrapper  .row {
     --bs-gutter-y: 46px;
 }
+
 /* magnum delivers section end */
 
 
@@ -1759,6 +1789,117 @@ input:focus , textarea:focus{
 
 
 /* section contact from section end */
+
+
+/* history gallery section start */
+.history-gallery-area .container {
+    max-width: 1266px;
+}
+.history-gallery{
+	z-index: 1;
+}
+.history-gallery img{
+	z-index: 1;
+	box-shadow: 7px 14px 0px 0px rgba(0, 0, 0, 0.10);
+}
+
+.h-gallery-1 {
+    width: 594px;
+    margin-left: 8px;
+}
+.h-gallery-2 {
+	width: 513px;
+    margin-top: 113px;
+    margin-left: -85px;
+}
+.h-gallery-3 {
+    width: 600px;
+    margin-top: 34px;
+    margin-left: 41px;
+}
+.h-gallery-4 {
+    width: 448px;
+    margin-left: 105px;
+}
+.h-gallery-5 {
+    width: 557px;
+    margin-left: 116px;
+    z-index: -1;
+    margin-top: 24px;
+}
+.h-gallery-6 {
+    max-width: 514px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.h-gallery-7 {
+    width: 302px;
+    margin-right: 74px;
+    margin-left: auto;
+    margin-top: 65px;
+    z-index: 2;
+}
+.h-gallery-8 {
+    margin-left: -121px;
+    max-width: 616px;
+	z-index: -1;
+}
+.h-gallery-9 {
+    z-index: -1;
+}
+.h-gallery-10 {
+    max-width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -23px;
+}
+.h-gallery-11 {
+    margin-left: 119px;
+    width: 670px;
+    z-index: 2;
+}
+.h-gallery-12{
+    max-width: 454px;
+    margin-left: 20px;
+    margin-top: 90px;
+}
+.dual-img {
+    margin-left: 27px;
+    max-width: 447px;
+}
+.h-content-1{
+    margin-left: 105px;
+}
+.h-content-2 {
+    margin-left: 48px;
+	width: 636px;
+}
+.h-content-3 {
+	margin-top: 30px;
+}
+
+.history-gallery-area .container .row:nth-child(2) {
+    margin-top: -80px;
+}
+.history-gallery-area .container .row:nth-child(3) {
+    margin-top: -46px;
+}
+.history-gallery-area .container .row:nth-child(4) {
+	margin-top: 28px;
+	margin-bottom: 35px;
+}
+.history-gallery-area .container .row:nth-child(6) {
+	margin-top: -38px;
+}
+.history-gallery-area .container .row:nth-child(7) {
+	margin-top: 33px;
+}
+
+
+
+
+
+/* history gallery section end */
 
 
 
@@ -1813,7 +1954,7 @@ input:focus , textarea:focus{
 
 .project-wrapper .row {
     --bs-gutter-x: 20px;
-    --bs-gutter-y: 26px;
+    --bs-gutter-y: 30px;
 }
 /* project section end */
 
@@ -2310,15 +2451,11 @@ input:focus , textarea:focus{
 
 /* career page css */
 /* open position info section start */
-.drone-services-center-shape {
-    left: auto;
-    transform: translate(0% , -50%);
-    width: 520px;
-    z-index: -1;
-    right: 119px;
-}
+
 .drone-services-area.open-position-info .drone-services-center-shape {
-    right: 121px;
+    right: 81px;
+    left: auto;
+    width: 519px;
 }
 .drone-services-area.open-position-info .mg-content-wrapper .row {
     --bs-gutter-y: 69px;
@@ -2326,7 +2463,78 @@ input:focus , textarea:focus{
 .drone-services-area.open-position-info {
     margin-top: 39px;
 }
+.open-positions-wrapper {
+    padding: 91px 0 135px;
+}
+.position-inner-info {
+    width: 465px;
+}
+.open-position-inner-info {
+    border-top: 1px solid #888888;
+    padding: 25px 0;
+}
+
+.open-position-inner-info::before{
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 100%;
+	width: 100000px;
+	background: #F9F9F9;
+	transform: translateX(-50%);
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.open-position-inner-info:hover::before{
+	opacity: 1;
+	visibility: visible;
+}
+.open-position-inner-info:last-child{
+	border-bottom: 1px solid #888888;
+}
+.open-positions-wrapper h4 {
+    margin-bottom: 37px;
+	line-height: 1.2;
+}
+.open-position-inner-info h6 {
+    color: #000;
+    margin-bottom: 0;
+    line-height: 1.35;
+}
+.open-position-inner-info span {
+    color: #676767;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    display: inline-block;
+}
 /* open position info section start */
+
+/* open gallery section start */
+.gallery-section-1-slider .swiper-slide ,
+.gallery-section-2-slider .swiper-slide {
+    width: 480px;
+}
+
+.gallery-section-2-slider{
+	margin-top: 4px;
+}
+.gallery-section-1-slider .swiper-wrapper,
+.gallery-section-2-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.gallery-section-2-slider {
+    direction: ltr;
+    transform: scaleX(-1);
+}
+.gallery-section-2-slider .swiper-slide {
+    transform: scaleX(-1);
+}
+.open-position-gallery-area {
+    padding-bottom: 137px;
+}
+/* open gallery section end */
 
 /*  position-detail section start  */
 .construction-area.position-detail-info h1 {
@@ -2424,6 +2632,14 @@ input:focus , textarea:focus{
 	color: #000;
 	text-transform: none;
 }
+
+.bg-green-white input[type="text"], 
+.bg-green-white input[type="email"], 
+.bg-green-white input[type="tel"], 
+.bg-green-white input[type="number"], 
+.bg-green-white input[type="password"], 
+.bg-green-white input[type="url"], 
+.bg-green-white textarea ,
 .bg-snow-drift input[type="text"], 
 .bg-snow-drift input[type="email"], 
 .bg-snow-drift input[type="tel"], 
@@ -2435,16 +2651,20 @@ input:focus , textarea:focus{
     background: #FFF;
 	border: 1px solid #0078C9;
 }
+.bg-green-white ::placeholder,
 .bg-snow-drift ::placeholder{
 	color: #000;
 }
 .bg-snow-drift .contact-form-wrapper .row{
 	--bs-gutter-x:18px;
 }
+
+.bg-green-white .nice-select,
 .bg-snow-drift .nice-select{
 	background-color:#FFF;
 	color: #505050;
 }
+.bg-green-white  .nice-select .option ,
 .bg-snow-drift  .nice-select .option {
     color: #fff;
 }
@@ -2474,6 +2694,10 @@ input:focus , textarea:focus{
 	margin-left: -97px;
 	content: "";
 	background-color: #A0A0A0;
+}
+.bg-snow-drift .contact-form-wrapper  .nice-select:after {
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
 }
 .contact-form-wrapper .form-group .form-grounp-inner{
 	gap: 29px;
@@ -2560,5 +2784,144 @@ input:focus , textarea:focus{
 }
 /* news article section end */
 
+
+/* single news section start  */
+.single-news-section-area {
+    padding: 70px 0 180px;
+}
+.single-news-section-area .back-member-btn {
+    margin-bottom: 57px;
+}
+
+.single-news-section-area .container {
+    max-width: 974px;
+}
+.share-post span {
+    color: #0078C9;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35;
+	font-family: "mundial", sans-serif;
+}
+.social-link:hover svg path{
+	transition: all 0.3s linear;
+}
+.social-link:hover svg path{
+	fill: #0078c9;
+}
+.single-news-small-img {
+    max-width: 564px;
+    margin: 49px auto 39px;
+    display: block;
+}
+.singgle-news-content p,
+.history-gallery p {
+    margin-bottom: 35px;
+}
+.singgle-news-content h4 {
+    margin-bottom: 33px;
+}
+.single-news-big-img {
+    margin-top: 49px;
+    margin-bottom: 69px;
+	display: block;
+}
+.single-news-section-area .share-post {
+    margin-top: 54px;
+}
+/* single news section end */
+
+
+/* conact form section start */
+.contact-form-area {
+    padding: 56px 0 178px;
+}
+.left-contact-area {
+    padding: 57px 52px 72px 52px;
+    max-width: 636px;
+}
+.left-contact-area h4 {
+    margin-bottom: 44px;
+}
+.bg-green-white .contact-form-wrapper  label{
+	color: #030304;
+}
+.right-contact-area {
+    padding: 58px 77px 70px 77px;
+    width: calc(100% + 31px);
+    margin-left: -31px;
+}
+.right-contact-info {
+    max-width: 291px;
+}
+.headquarters-info {
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+}
+.headquarters-info .address-info {
+    margin-top: 0;
+}
+.headquarters-info .directions {
+    margin-top: 24px;
+}
+.headquarters-info .diretions-title {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.headquarters-info .directions p  ,
+.headquarters-info .directions p a {
+    opacity: 1;
+	color: #fff;
+	font-size: 16px;
+}
+
+.headquarters-info::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+	width: 100%;
+    background: #DCDCDC;
+    content: "";
+}
+.right-contact-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    opacity: 0.23;
+	background-image: url('../images/contact/contact-right-bg.jpg');
+	background-repeat: no-repeat;
+}
+.headquarters-info .address-info address {
+    font-size: 16px;
+    max-width: 220px;
+}
+.contact-form-area .contact-form-wrapper .magnum-btn {
+    margin-top: 33px;
+}
+.office-number-info p {
+    margin: 0;
+    
+}
+.office-number-info p a{
+	text-decoration: underline;
+}
+.office-number-info p a:hover{
+	text-decoration: none;
+}
+.office-number-info {
+    margin-bottom: 25px;
+}
+.contact-form-area .contact-form-wrapper .form-group {
+    margin-bottom: 23px;
+}
+.contact-form-area .contact-form-wrapper  label {
+    margin-bottom: 12px;
+}
+/* conact form section end */
 
 
