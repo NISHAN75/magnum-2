@@ -1287,6 +1287,7 @@ input:focus , textarea:focus{
 }
 .project-details-content h4,
 .history-gallery h4,
+.left-contact-area h4 ,
 .section-title-wrapper h4 ,
 .construcation-content h4,
 .content-block-content h4,
@@ -1688,6 +1689,8 @@ input:focus , textarea:focus{
 	font-weight: 300;
 }
 .mg-content-info h6 ,
+.team-member-content h6 ,
+.content-list h6 ,
 .video-info-conent h6,
 .mg-personal-information h6,
 .news-article-card-content h6,
@@ -2202,6 +2205,7 @@ input:focus , textarea:focus{
     font-size: 38.118px;
     line-height: 1;
 }
+.team-member-content p ,
 .member-wrapper p ,
 .video-info-conent p
 {
@@ -2375,6 +2379,23 @@ input:focus , textarea:focus{
 /* our client say section start */
 .our-client-say-area {
     padding: 76px 0 0px;
+}
+.video-card-wrapper::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #F5F5F5;
+    content: "";
+    z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s linear;
+}
+.video-card-wrapper:hover::before{
+	visibility: visible;
+	opacity: 1;
 }
 .video-icon-wrapper svg{
 	height: 51px;
@@ -2570,6 +2591,7 @@ input:focus , textarea:focus{
 .position-details-bottom-wrapper p {
     color: #8D8D8D;
     margin-bottom: 45px;
+    font-style: italic;
 }
 
 /*  position-detail section start  */
